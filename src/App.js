@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Cons from './components/Cons/cons';
+import Pros from './components/Pros/pros';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header>
+    Should I eat at  McDonalds?
+     </header>
+     <div className='todo'>
+     <div className='left-content'>
+        <h1>Pros</h1>
+        <Pros/>
+      </div>
+      <div className='right-content'>
+        <h1>Cons</h1>
+        <Cons/>
+      </div>
     </div>
+     </div>
+     
   );
 }
 
